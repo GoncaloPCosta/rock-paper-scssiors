@@ -1,14 +1,14 @@
-let rock;
-let paper;
-let scissors;
+let rock = "rock";
+let paper = "paper";
+let scissors = "scissors";
 
 function getComputerChoice() {
-	let num = Math.floor(Math.random()) * 100 + 1;
+	const num = Math.floor(Math.random() * 100 + 1);
 
 	if (num <= 29) {
 		console.log("I choose rock! ");
 		return rock;
-	} else if (num <= 29 && num <= 65) {
+	} else if (num > 29 && num <= 65) {
 		console.log("I chosse paper!");
 		return paper;
 	} else {
@@ -44,7 +44,7 @@ function playRound(humanChoice, computerChoice) {
 		console.log("scissors beat paper");
 	} else if (humanChoice == paper && computerChoice == rock) {
 		console.log("paper beats rock");
-	} else if (humanChoice == scisssors && computerChoice == rock) {
+	} else if (humanChoice == scissors && computerChoice == rock) {
 		console.log("rcok beats scissors");
 	} else if (humanChoice == paper && computerChoice == scissors) {
 		console.log("scissors beats paper");
