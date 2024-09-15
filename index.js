@@ -20,12 +20,15 @@ function getComputerChoice() {
 function getHumanChoice() {
 	let choice = prompt("Choose! rock, paper, scissors!");
 
-	if (choice === "rock") {
+	if (choice === rock) {
 		console.log("You choose rock!");
-	} else if (choice === "paper") {
+		return rock;
+	} else if (choice === paper) {
 		console.log("You choose paper!");
-	} else if (choice === "scissors") {
+		return paper;
+	} else if (choice === scissors) {
 		console.log("You choose scissors!");
+		return scissors;
 	} else {
 		console.log("Not valid");
 	}
